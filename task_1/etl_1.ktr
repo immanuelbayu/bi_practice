@@ -436,11 +436,11 @@
   <notepads>
   </notepads>
   <connection>
-    <name>transform_dim_products</name>
+    <name>transform_dim_products_2</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>tokopaedi</database>
+    <database>tokopaedi_2</database>
     <port>3306</port>
     <username>tiket</username>
     <password>Encrypted 2be98afc86aa7f2e4bf10a575cac3fd89</password>
@@ -625,7 +625,7 @@
     </partitioning>
     <schema/>
     <table>dim_products</table>
-    <connection>transform_dim_products</connection>
+    <connection>transform_dim_products_2</connection>
     <commit>100</commit>
     <update>Y</update>
     <fields>
@@ -641,27 +641,27 @@
       <field>
         <name>product_stock</name>
         <lookup>product_stock</lookup>
-        <update>Update</update>
+        <update>Punch through</update>
       </field>
       <field>
         <name>product_name</name>
         <lookup>product_name</lookup>
-        <update>Update</update>
+        <update>Punch through</update>
       </field>
       <field>
         <name>product_price</name>
         <lookup>product_price</lookup>
-        <update>Update</update>
+        <update>Punch through</update>
       </field>
       <field>
         <name>product_type</name>
         <lookup>product_type</lookup>
-        <update>Update</update>
+        <update>Punch through</update>
       </field>
       <field>
         <name>product_image</name>
         <lookup>product_image</lookup>
-        <update>Update</update>
+        <update>Punch through</update>
       </field>
       <return>
         <name>dim_products_id</name>

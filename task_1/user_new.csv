@@ -1,5 +1,5 @@
 user_id,user_first_name,user_last_name,user_phone,user_address,user_city,user_province,user_email,user_username,user_password
-1,saymen,saymen,6.29E+11,Jalan Mangga 23,Bandung,Jawa Barat,michaelj@binus.ac.id,id_michaelj,123michael
+1,saymen,saymen lagi,6.29E+11,Jalan Mangga 23,Bandung,Jawa Barat,michaelj@binus.ac.id,id_michaelj,123michael
 2,decade,decade,6.29E+11,Jalan Jeruk 15,Surabaya,Jawa Timur,decaded@binus.ac.id,id_decaded,123decade
 3,agito,agito,6.29E+11,Jalan Apel 7,Bandung,Jawa Barat,agitoa@binus.ac.id,id_agitoa,123agito
 4,kuuga,kuuga,6.29E+11,Jalan Anggur 42,Yogyakarta,Daerah Istimewa Yogyakarta,kuugak@binus.ac.id,id_kuugak,123kuuga
@@ -98,4 +98,4 @@ user_id,user_first_name,user_last_name,user_phone,user_address,user_city,user_pr
 97,tsukasa,kadoya,6.29E+11,Jalan Stroberi 9,Semarang,Jawa Tengah,tsukasak@binus.ac.id,id_tsukasak,123tsukasa
 98,faiz,halim,6.29E+11,Jalan Anggur 16,Makassar,Sulawesi Selatan,faizh@binus.ac.id,id_faizh,123faiz
 99,fourze,gaia,6.29E+11,Jalan Nanas 7,Malang,Jawa Timur,fourzeg@binus.ac.id,id_fourzeg,123fourze
-100,rikako,sakata,6.29E+11,Jalan Durian 11,Denpasar,Bali,rikakos@binus.ac.id,id_rikakos,123rikako
+100,rikako,sakata,6.29E+11,Jalan Durian 11,Bandung,Jawa Barat,rikakos@binus.ac.id,id_rikakos,123rikako

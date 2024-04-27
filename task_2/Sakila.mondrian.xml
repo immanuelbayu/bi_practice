@@ -1,0 +1,50 @@
+<Schema name="Sakila">
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Film">
+    <Hierarchy visible="true" hasAll="true" primaryKey="id_film">
+      <Table name="dim_film">
+      </Table>
+      <Level name="Film" visible="true" table="dim_film" column="title" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="TimeDimension" visible="true" highCardinality="false" name="Time">
+    <Hierarchy visible="true" hasAll="true" primaryKey="id_date">
+      <Table name="dim_date">
+      </Table>
+      <Level name="Year" visible="true" table="dim_date" column="tahun" ordinalColumn="tahun" type="String" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never">
+      </Level>
+      <Level name="Month" visible="true" table="dim_date" column="bulan" ordinalColumn="id_date" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Customer">
+    <Hierarchy visible="true" hasAll="true" primaryKey="id_customer">
+      <Table name="dim_customer">
+      </Table>
+      <Level name="Customer" visible="true" table="dim_customer" column="first_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Category">
+    <Hierarchy visible="true" hasAll="true" primaryKey="category_id">
+      <Table name="dim_category">
+      </Table>
+      <Level name="Category" visible="true" table="dim_category" column="category_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Sakila" visible="true" cache="true" enabled="true">
+    <Table name="factrental">
+    </Table>
+    <DimensionUsage source="Film" name="Film" visible="true" foreignKey="id_film" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Time" name="Time" visible="true" foreignKey="id_rental_date" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer" name="Customer" visible="true" foreignKey="id_customer" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Category" name="Category" visible="true" foreignKey="category_id" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Amount" column="amount" datatype="Numeric" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

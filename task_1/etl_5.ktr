@@ -436,11 +436,11 @@
   <notepads>
   </notepads>
   <connection>
-    <name>transform_tr_purchase</name>
+    <name>transform_tr_purchase_2</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>tokopaedi</database>
+    <database>tokopaedi_2</database>
     <port>3306</port>
     <username>tiket</username>
     <password>Encrypted 2be98afc86aa7f2e4bf10a575cac3fd89</password>
@@ -502,7 +502,7 @@
     <hop>
       <from>CSV file input</from>
       <to>Lookup User</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Lookup User</from>
@@ -676,7 +676,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>transform_tr_purchase</connection>
+    <connection>transform_tr_purchase_2</connection>
     <schema/>
     <table>tr_order</table>
     <commit>1000</commit>
@@ -758,7 +758,7 @@
     </partitioning>
     <schema>tokopaedi</schema>
     <table>dim_payment_method</table>
-    <connection>transform_tr_purchase</connection>
+    <connection>transform_tr_purchase_2</connection>
     <commit>100</commit>
     <update>N</update>
     <fields>
@@ -815,7 +815,7 @@
     </partitioning>
     <schema>tokopaedi</schema>
     <table>dim_products</table>
-    <connection>transform_tr_purchase</connection>
+    <connection>transform_tr_purchase_2</connection>
     <commit>100</commit>
     <update>N</update>
     <fields>
@@ -872,7 +872,7 @@
     </partitioning>
     <schema>tokopaedi</schema>
     <table>dim_shipping_status</table>
-    <connection>transform_tr_purchase</connection>
+    <connection>transform_tr_purchase_2</connection>
     <commit>100</commit>
     <update>N</update>
     <fields>
@@ -929,7 +929,7 @@
     </partitioning>
     <schema>tokopaedi</schema>
     <table>dim_user</table>
-    <connection>transform_tr_purchase</connection>
+    <connection>transform_tr_purchase_2</connection>
     <commit>100</commit>
     <update>N</update>
     <fields>
